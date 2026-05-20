@@ -28,7 +28,7 @@ This project demonstrates how raw operational data can be transformed into busin
 
 # Architecture
 
-'''text Raw Retail CSV Data         ↓ Python Ingestion Pipeline         ↓ DuckDB Data Warehouse         ↓ dbt Staging Models         ↓ Fact & Dimension Tables         ↓ Analytics Marts         ↓ Tableau Dashboards '''
+```text Raw Retail CSV Data         ↓ Python Ingestion Pipeline         ↓ DuckDB Data Warehouse         ↓ dbt Staging Models         ↓ Fact & Dimension Tables         ↓ Analytics Marts         ↓ Tableau Dashboards ```
 
 ---
 
