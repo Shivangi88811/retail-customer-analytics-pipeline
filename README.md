@@ -29,7 +29,7 @@ This project demonstrates how raw operational data can be transformed into busin
 # Architecture
 
 ```text
-Raw Retail CSV Data         
+Raw Retail CSV Data
         ↓
 Python Ingestion Pipeline
         ↓
@@ -37,6 +37,217 @@ DuckDB Data Warehouse
         ↓
 dbt Staging Models
         ↓
+Fact & Dimension Tables
+        ↓
+Analytics Marts
+        ↓
+Tableau Dashboards
+```
+
+---
+
+# Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Programming | Python |
+| Data Processing | Pandas |
+| Data Warehouse | DuckDB |
+| Transformations | dbt |
+| Data Modeling | Star Schema |
+| Visualization | Tableau Public |
+| Version Control | Git & GitHub |
+
+---
+
+# Project Workflow
+
+## 1. Data Ingestion
+- Loaded multiple retail datasets using Python and Pandas
+- Performed schema inspection and profiling
+- Validated missing values and dataset integrity
+
+## 2. Warehouse Loading
+- Loaded datasets into DuckDB warehouse tables
+- Created relational warehouse structure
+
+## 3. dbt Transformations
+Created modular dbt models including:
+- staging models
+- fact tables
+- dimension tables
+- analytics marts
+
+## 4. Dimensional Modeling
+Implemented star schema architecture:
+- `fct_orders`
+- `dim_customers`
+- `customer_revenue_mart`
+
+## 5. Business Intelligence
+Built Tableau dashboards for:
+- revenue analysis
+- customer analytics
+- geographic trends
+- payment insights
+- executive KPI reporting
+
+---
+
+# dbt Models
+
+## Staging Models
+- stg_customers
+- stg_orders
+- stg_payments
+
+## Fact Tables
+- fct_orders
+
+## Dimension Tables
+- dim_customers
+
+## Analytics Marts
+- customer_revenue_mart
+
+---
+
+# Tableau Dashboard Features
+
+The Tableau dashboards provide:
+
+- Executive KPI reporting
+- Revenue analysis
+- Customer segmentation insights
+- Geographic revenue distribution
+- Order analytics
+- Payment method analysis
+
+---
+
+# Key Analytics KPIs
+
+- Total Revenue
+- Total Orders
+- Average Order Value
+- Revenue by State
+- Revenue by Customer City
+- Customer Revenue Distribution
+
+---
+
+# Data Engineering Concepts Demonstrated
+
+- ELT architecture
+- Multi-file ingestion
+- Warehouse modeling
+- dbt transformations
+- Star schema design
+- Fact and dimension modeling
+- Analytics marts
+- Data quality testing
+- BI reporting workflows
+
+---
+
+# Future Enhancements
+
+Planned future improvements include:
+- Apache Airflow orchestration
+- Incremental dbt models
+- AI-generated business summaries
+- Anomaly detection
+- Customer segmentation modeling
+- Real-time ingestion pipelines
+- Cloud warehouse migration
+- Advanced analytics dashboards
+
+---
+
+# Project Structure
+
+```text
+retail-customer-analytics-pipeline/
+│
+├── app/
+│   ├── dashboard.py
+│   └── ingestion.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── retail_analytics_dbt/
+│   ├── models/
+│   │   ├── staging/
+│   │   └── marts/
+│
+├── notebooks/
+├── docs/
+├── sql/
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# How To Run
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Shivangi88811/retail-customer-analytics-pipeline.git
+```
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Ingestion Pipeline
+
+```bash
+python3 app/ingestion.py
+```
+
+## Run dbt Models
+
+```bash
+cd retail_analytics_dbt
+
+dbt run
+```
+
+## Run dbt Tests
+
+```bash
+dbt test
+```
+
+## Generate dbt Documentation
+
+```bash
+dbt docs generate
+dbt docs serve
+```
+
+---
+
+# Dataset
+
+Dataset Source:
+Brazilian E-Commerce Public Dataset by Olist
+
+Dataset Link:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+---
+
+# Author
+
+Shivangi Ajmeri        ↓
 Fact & Dimension Tables
         ↓
 Analytics Marts
