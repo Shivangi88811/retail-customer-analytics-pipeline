@@ -1,4 +1,7 @@
-
+venv/
+__pycache__/
+*.duckdb
+.DS_Store
+logs/
 target/
 dbt_packages/
-logs/
