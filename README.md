@@ -166,7 +166,27 @@ Planned future improvements include:
 
 # Project Structure
 
-text retail-customer-analytics-pipeline/ │ ├── app/ │   ├── ingestion.py │   └── dashboard.py │ ├── data/ │   ├── raw/ │   └── processed/ │ ├── retail_analytics_dbt/ │   ├── models/ │   │   ├── staging/ │   │   └── marts/ │ ├── notebooks/ ├── docs/ ├── sql/ │ ├── README.md └── requirements.txt 
+retail-customer-analytics-pipeline/
+│
+├── app/
+│   ├── ingestion.py
+│   └── dashboard.py
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── retail_analytics_dbt/
+│   ├── models/
+│   │   ├── staging/
+│   │   └── marts/
+│
+├── notebooks/
+├── docs/
+├── sql/
+│
+├── README.md
+└── requirements.txt
 
 ---
 
